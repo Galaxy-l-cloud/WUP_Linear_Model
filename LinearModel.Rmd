@@ -120,4 +120,20 @@ predict(model.2,target,interval=c("prediction"))
 
 The table shows that our best fit value for this scenario is -0.7180063, but 95% of the time the value will be between -3.292089 and 1.856077.
 
+### Scatter plot for Model 2 with linear fit
+
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=GRIP))
+
+```
+
+```{r}
+basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20)) + geom_smooth(method=lm)
+```
+
+The scatter plots of SIMS~ARM and SIMS~GRIP, tells us that the data in model 1 is more scattered across the ends of the best fit line however on Model 2  we have less data point towards the ends of the best fit line.
+
+
+
+
 
