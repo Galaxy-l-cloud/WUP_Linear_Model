@@ -33,3 +33,21 @@ The graph shows us that the simulation arm strength is in between 50 - 100.
 ```{r}
 cor(SIMS~ARM,data=data)
 ```
+
+the numerical data shows us that there is a positive value between the simulated arm strength of the individuals. The value supports the graph data of the SIMS and ARMS comparison.
+
+### Inferential Results 
+
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+
+
+
+
+
+
+
+
