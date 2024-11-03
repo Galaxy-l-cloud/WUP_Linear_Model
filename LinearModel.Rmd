@@ -14,4 +14,22 @@ require(knitr)
 data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt",sep="",header=TRUE)  
 ```
 
+## Model 1: SIMS~ARM
+### Scartter Plot
 
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+```
+
+
+```{r}
+basicNN + geom_point() + ggtitle("SIMS~ARM")
+```
+
+The graph shows us that the simulation arm strength is in between 50 - 100.
+
+### Numerical Results
+
+```{r}
+cor(SIMS~ARM,data=data)
+```
