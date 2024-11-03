@@ -74,3 +74,29 @@ basicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_tex
 
 
 THe graph shows us the expected results for SIMS~ARM. We see that the line interjects across the midpoint in a positive direction.
+
+
+## Model 2: SIMS~GRIP
+
+### Scartter Plot
+
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=GRIP))
+
+```
+
+```{r}
+basicNN + geom_point() + ggtitle("SIMS~GRIP")
+
+```
+
+
+The graph shows us that the simulated grip strength lies within 100-150.
+
+
+
+
+
+
+
+
