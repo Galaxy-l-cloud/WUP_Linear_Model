@@ -28,7 +28,7 @@ basicNN + geom_point() + ggtitle("SIMS~ARM")
 
 The graph shows us that the simulation arm strength is in between 50 - 100.
 
-### Numerical Results
+### Numerical Results  
 
 ```{r}
 cor(SIMS~ARM,data=data)
