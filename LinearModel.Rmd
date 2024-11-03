@@ -103,5 +103,17 @@ cor(SIMS~GRIP,data=data)
 The numerical results show us that the SIMS~GRIP value is lower than the SIMS~ARM correlation value with was 0.6398458 which tells us that SIMS~ARM has a better fit than Sims vs Grip. Sims~Arm we got 0.6860073. 
 
 
+### Inferential Results
+
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+```
+
+
+
+
+
+
 
 
