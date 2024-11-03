@@ -93,9 +93,14 @@ basicNN + geom_point() + ggtitle("SIMS~GRIP")
 
 The graph shows us that the simulated grip strength lies within 100-150.
 
+### Numerical Results
+
+```{r}
+cor(SIMS~GRIP,data=data)
+```
 
 
-
+The numerical results show us that the SIMS~GRIP value is lower than the SIMS~ARM correlation value with was 0.6398458 which tells us that SIMS~ARM has a better fit than Sims vs Grip. Sims~Arm we got 0.6860073. 
 
 
 
