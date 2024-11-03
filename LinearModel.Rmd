@@ -58,7 +58,7 @@ target<-data.frame(ARM=90, GRIP=90)
 predict(model.1,target,interval=c("prediction"))
 ```
 
-The prediction shows that the fit of the plot is 10.8155096 but 95% of the time, we are going to have a value between -1.617843 and 3.248863.
+The prediction shows that the fit of the plot is 0.8155096 but 95% of the time, we are going to have a value between -1.617843 and 3.248863.
 
 ### Scartter plot for Model 1 with linear fit
 
@@ -110,10 +110,14 @@ model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.2)
 ```
 
+The inferential results give us an equation of 0.045463x-4.809675 as the equation for our line of best fit. With the positive coefficient we have a positive slope.
 
+### Prediction of Model 2
 
+```{r}
+predict(model.2,target,interval=c("prediction"))
+```
 
-
-
+The table shows that our best fit value for this scenario is -0.7180063, but 95% of the time the value will be between -3.292089 and 1.856077.
 
 
