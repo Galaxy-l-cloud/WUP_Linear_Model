@@ -44,7 +44,13 @@ summary.lm(model.1)
 ```
 
 
+The inferential data shows us a positive value for SIMS and ARM with an equation for the slope of 0.054563x-4.095160.
 
+### Create target
+
+```{r}
+target<-data.frame(ARM=90, GRIP=90)
+```
 
 
 
